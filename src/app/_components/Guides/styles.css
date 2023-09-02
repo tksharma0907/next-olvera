@@ -1,0 +1,124 @@
+.guide-wrapper {
+  background-size: 100% 100%;
+  padding: 150px 12%;
+  width: 100%;
+  background-image: url("/assets/laptop.png");
+  display: flex;
+  background-repeat: no-repeat;
+  height: 630px;
+  justify-content: space-between;
+}
+
+.guide-left-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.guide-title {
+  color: #fff;
+  font-family: var(--jakarta);
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.guide-des {
+  color: #fff;
+  font-family: var(--archivo);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.guide-right-wrapper {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: end;
+}
+
+.guide-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view-more-typo {
+  color: #fff;
+  font-family: var(--montserrat-simp);
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.guide-arrow {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.guide-additional {
+  display: none;
+  text-align: center;
+}
+
+.guide-additional-heading {
+  color: #c2278e;
+  font-family: var(--oswald);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+}
+
+.guide-additional-sub-heading {
+  color: #fff;
+  text-align: center;
+  font-family: var(--montserrat-simp);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+
+.guide-additional-info-heading {
+  color: #fff;
+  text-align: center;
+  font-family: var(--jakarta);
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .guide-wrapper {
+    flex-direction: column;
+    padding: 50px 30px;
+    height: 525px;
+  }
+
+  .guide-left-wrapper {
+    width: 100%;
+  }
+
+  .guide-right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("/assets/res-aptop.png");
+  }
+  .guide-additional {
+    display: block;
+  }
+
+  .guide-title {
+    display: none;
+  }
+
+  .guide-des {
+    text-align: center;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,134 @@
+.careers-wrapper {
+  padding: 60px 0 60px 12%;
+  width: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  height: 730px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.careers-left-wrapper {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.careers-right-wrapper {
+  width: 40%;
+  background-image: url("/assets/art.png");
+  background-size: 100% 100%;
+}
+
+.careers-title {
+  color: #c2278e;
+  font-family: var(--oswald);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.careers-sub-title {
+  margin-top: 30px;
+  color: #373737;
+  font-family: var(--montserrat-simp);
+  font-size: 53px;
+  font-weight: 600;
+}
+
+.careers-des {
+  margin-top: 30px;
+  color: #3f3e3e;
+  font-family: var(--jakarta);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+.careers-btn {
+  border: none;
+  margin-top: 30px;
+  display: flex;
+  width: fit-content;
+  height: 45px;
+  padding: 15px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--jakarta);
+  border-radius: 30px;
+  background: #ff74d0;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.careers-circle-top {
+  position: absolute;
+  right: -185px;
+}
+
+.careers-circle-bottom {
+  left: -380px;
+  position: absolute;
+  bottom: -270px;
+}
+
+.careers-add-circle {
+  display: none;
+  position: absolute;
+}
+
+@media only screen and (max-width: 900px) {
+  .careers-wrapper {
+    padding: 0;
+    height: fit-content;
+    flex-direction: column-reverse;
+  }
+
+  .careers-left-wrapper {
+    align-items: center;
+    padding: 70px 30px;
+    width: 100%;
+  }
+
+  .careers-right-wrapper {
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+  }
+
+  .careers-circle-top {
+    display: none;
+  }
+
+  .careers-circle-bottom {
+    display: none;
+  }
+
+  .careers-title {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .careers-sub-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .careers-des {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .careers-add-circle {
+    display: block;
+    height: 400px;
+    width: 300px;
+    left: 0;
+  }
+}
