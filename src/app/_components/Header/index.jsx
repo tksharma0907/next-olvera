@@ -16,8 +16,6 @@ const headerItemsConfig = [
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  console.log(open);
-
   return (
     <>
       {open && (
