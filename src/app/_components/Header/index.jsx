@@ -28,7 +28,6 @@ const Header = () => {
           <div className="menu">
             <div className="res-menu-items">
               {headerItemsConfig.map(({ label, link }) => {
-                console.log(label);
                 return (
                   <div key={label} className="menu-item">
                     {label.toUpperCase()}
@@ -57,7 +56,9 @@ const Header = () => {
           </Link>
           <div className="menu-items">
             {headerItemsConfig.map(({ label, link }) => (
-              <div className="menu-item">{label.toUpperCase()}</div>
+              <div key={label} className="menu-item">
+                {label.toUpperCase()}
+              </div>
             ))}
           </div>
           <div className="contact-btn-wrapper">

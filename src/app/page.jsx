@@ -4,6 +4,7 @@ import Careers from "./_components/Careers";
 import Guides from "./_components/Guides";
 import Stats from "./_components/Stats";
 import VideoGuide from "./_components/VideoGuide";
+import Reviews from "./_components/Reviews";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Guides />
       <Careers />
       <VideoGuide />
+      <Reviews />
     </>
   );
 }

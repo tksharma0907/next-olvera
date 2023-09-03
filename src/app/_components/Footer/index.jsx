@@ -64,7 +64,9 @@ const Footer = () => {
             <div className="footer-item-title">Resources</div>
             <div className="footer-item">
               {resourceConfig.map(({ label, id }) => (
-                <a href={`#${id}`}>{label}</a>
+                <a key={label} href={`#${id}`}>
+                  {label}
+                </a>
               ))}
             </div>
           </div>
@@ -72,7 +74,9 @@ const Footer = () => {
             <div className="footer-item-title">Careers</div>
             <div className="footer-item">
               {careersConfig.map(({ label, id }) => (
-                <a href={`#${id}`}>{label}</a>
+                <a key={label} href={`#${id}`}>
+                  {label}
+                </a>
               ))}
             </div>
           </div>

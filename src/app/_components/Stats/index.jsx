@@ -76,7 +76,7 @@ const Stats = () => {
     <div className="stats-wrapper">
       <div className="values-wrapper ">
         {statsConfig.map(({ ...rest }) => (
-          <StatRenderer {...rest} />
+          <StatRenderer key={rest.label} {...rest} />
         ))}
       </div>
       <div className="services-section">
@@ -105,7 +105,7 @@ const Stats = () => {
         <div className="services-right-section">
           <div className="representations-wrapper">
             {pictorialRepConfig.map(({ ...rest }) => (
-              <PictorialRep {...rest} />
+              <PictorialRep key={rest.title} {...rest} />
             ))}
           </div>
         </div>
